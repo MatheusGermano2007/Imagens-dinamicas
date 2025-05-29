@@ -16,8 +16,9 @@ namespace Form_multiplo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmJogodeDados());
+            // Application.Run(new frmJogodeDados());
             //Application.Run(new Form1());
+            Application.Run(new FrmMenu());
         }
     }
 }

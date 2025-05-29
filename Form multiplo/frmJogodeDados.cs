@@ -15,9 +15,20 @@ namespace Form_multiplo
         private Random sorteio = new Random();
         private int dadoJog1, dadoJog2;
         private int contVitoria1 = 0, contVitoria2 = 0;
-        public frmJogodeDados()
+        private string jogador1;
+        private string jogador2;
+        public frmJogodeDados(string jogador1, string jogador2)
         {
             InitializeComponent();
+            this.jogador1 = jogador1;
+            this.jogador2 = jogador2;
+            
+        }
+
+        private void frmJogodeDados_Load(object sender, EventArgs e)
+        {
+            lblJogador1.Text = jogador1;
+            lblJogador2.Text = jogador2;
         }
 
         private void btnReiniciar_Click(object sender, EventArgs e)
@@ -41,6 +52,18 @@ namespace Form_multiplo
                 Application.Exit();
             }
         }
+
+        private void lblJogador1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblJogador2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
 
         private void btnJogar_Click(object sender, EventArgs e)
         {

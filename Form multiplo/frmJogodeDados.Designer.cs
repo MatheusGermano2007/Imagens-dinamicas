@@ -87,11 +87,13 @@
             // lblJogador2
             // 
             this.lblJogador2.AutoSize = true;
-            this.lblJogador2.Location = new System.Drawing.Point(562, 17);
+            this.lblJogador2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJogador2.Location = new System.Drawing.Point(553, 17);
             this.lblJogador2.Name = "lblJogador2";
-            this.lblJogador2.Size = new System.Drawing.Size(54, 13);
+            this.lblJogador2.Size = new System.Drawing.Size(80, 20);
             this.lblJogador2.TabIndex = 14;
             this.lblJogador2.Text = "Jogador 2";
+            this.lblJogador2.Click += new System.EventHandler(this.lblJogador2_Click);
             // 
             // pcJogador2
             // 
@@ -115,11 +117,13 @@
             // lblJogador1
             // 
             this.lblJogador1.AutoSize = true;
-            this.lblJogador1.Location = new System.Drawing.Point(73, 17);
+            this.lblJogador1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJogador1.Location = new System.Drawing.Point(59, 17);
             this.lblJogador1.Name = "lblJogador1";
-            this.lblJogador1.Size = new System.Drawing.Size(54, 13);
+            this.lblJogador1.Size = new System.Drawing.Size(80, 20);
             this.lblJogador1.TabIndex = 11;
             this.lblJogador1.Text = "Jogador 1";
+            this.lblJogador1.Click += new System.EventHandler(this.lblJogador1_Click);
             // 
             // pcJogador1
             // 
@@ -148,6 +152,7 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "frmJogodeDados";
             this.Text = "frmJogodeDados";
+            this.Load += new System.EventHandler(this.frmJogodeDados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcJogador2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcJogador1)).EndInit();
             this.ResumeLayout(false);

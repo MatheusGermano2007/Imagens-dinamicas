@@ -10,16 +10,15 @@ using System.Windows.Forms;
 
 namespace Form_multiplo
 {
-    public partial class Form1 : Form
+    public partial class frmCarregaFotos : Form
     {
         private OpenFileDialog opdFoto;
-        public Form1()
+        public frmCarregaFotos()
         {
             opdFoto = new OpenFileDialog();
             InitializeComponent();
         }
-
-        private void btnCarregarFoto_Click(object sender, EventArgs e)
+        private void btnCarregarFoto1_Click(object sender, EventArgs e)
         {
             opdFoto.Filter = "JPEG(*.jpg)|*.jpg|PNG(*.png)|*.png|BMP(*.bmp)|*.bmp";
             if (opdFoto.ShowDialog() == DialogResult.OK)
@@ -30,10 +29,16 @@ namespace Form_multiplo
 
                 pictureBox1.Image = null;
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void btnCarregarFoto2_Click(object sender, EventArgs e)
         {
+            opdFoto.Filter = "JPEG(*.jpg)|*.jpg|PNG(*.png)|*.png|BMP(*.bmp)|*.bmp";
+            if (opdFoto.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox2.Image = Image.FromFile(opdFoto.FileName);
+            }
+            else
 
+                pictureBox2.Image = null;
         }
     }
 }
