@@ -53,16 +53,6 @@ namespace Form_multiplo
             }
         }
 
-        private void lblJogador1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblJogador2_Click(object sender, EventArgs e)
-        {
-
-        }
-
        
 
         private void btnJogar_Click(object sender, EventArgs e)

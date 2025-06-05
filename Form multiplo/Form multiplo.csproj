@@ -83,6 +83,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -96,6 +97,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fundoTiro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dado6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BolaCristal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fundo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Captura de tela 2025-06-04 201407.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -40,5 +40,26 @@ namespace Form_multiplo
 
                 pictureBox2.Image = null;
         }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Image = null;
+            pictureBox2.Image = null;
+            if (pictureBox1.Image != null)
+            {
+                pictureBox1.Image.Dispose();
+                pictureBox1.Image = null;
+            }
+            if (pictureBox2.Image != null)
+            {
+                pictureBox2.Image.Dispose();
+                pictureBox2.Image = null;
+            }
+        }
     }
 }

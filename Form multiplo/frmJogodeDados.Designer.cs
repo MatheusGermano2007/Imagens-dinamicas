@@ -33,10 +33,12 @@
             this.btnJogar = new System.Windows.Forms.Button();
             this.btnReiniciar = new System.Windows.Forms.Button();
             this.lblJogador2 = new System.Windows.Forms.Label();
-            this.pcJogador2 = new System.Windows.Forms.PictureBox();
             this.lblPlacar1 = new System.Windows.Forms.Label();
             this.lblJogador1 = new System.Windows.Forms.Label();
+            this.pcJogador2 = new System.Windows.Forms.PictureBox();
             this.pcJogador1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pcJogador2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcJogador1)).BeginInit();
             this.SuspendLayout();
@@ -93,16 +95,6 @@
             this.lblJogador2.Size = new System.Drawing.Size(80, 20);
             this.lblJogador2.TabIndex = 14;
             this.lblJogador2.Text = "Jogador 2";
-            this.lblJogador2.Click += new System.EventHandler(this.lblJogador2_Click);
-            // 
-            // pcJogador2
-            // 
-            this.pcJogador2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pcJogador2.Location = new System.Drawing.Point(492, 46);
-            this.pcJogador2.Name = "pcJogador2";
-            this.pcJogador2.Size = new System.Drawing.Size(196, 212);
-            this.pcJogador2.TabIndex = 13;
-            this.pcJogador2.TabStop = false;
             // 
             // lblPlacar1
             // 
@@ -123,7 +115,15 @@
             this.lblJogador1.Size = new System.Drawing.Size(80, 20);
             this.lblJogador1.TabIndex = 11;
             this.lblJogador1.Text = "Jogador 1";
-            this.lblJogador1.Click += new System.EventHandler(this.lblJogador1_Click);
+            // 
+            // pcJogador2
+            // 
+            this.pcJogador2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pcJogador2.Location = new System.Drawing.Point(492, 46);
+            this.pcJogador2.Name = "pcJogador2";
+            this.pcJogador2.Size = new System.Drawing.Size(196, 212);
+            this.pcJogador2.TabIndex = 13;
+            this.pcJogador2.TabStop = false;
             // 
             // pcJogador1
             // 
@@ -134,12 +134,34 @@
             this.pcJogador1.TabIndex = 10;
             this.pcJogador1.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(59, 340);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 20);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Placar 1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(553, 340);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 20);
+            this.label2.TabIndex = 20;
+            this.label2.Text = "Placar 2";
+            // 
             // frmJogodeDados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(761, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblPlacar2);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnJogar);
@@ -171,5 +193,7 @@
         private System.Windows.Forms.Label lblPlacar1;
         private System.Windows.Forms.Label lblJogador1;
         private System.Windows.Forms.PictureBox pcJogador1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

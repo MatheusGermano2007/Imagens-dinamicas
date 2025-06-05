@@ -31,5 +31,15 @@ namespace Form_multiplo
         {
             Application.Exit();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNomeJog1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
