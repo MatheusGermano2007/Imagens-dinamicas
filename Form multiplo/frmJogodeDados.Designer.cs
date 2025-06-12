@@ -39,6 +39,7 @@
             this.pcJogador1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pcJogador2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcJogador1)).BeginInit();
             this.SuspendLayout();
@@ -52,6 +53,7 @@
             this.lblPlacar2.Name = "lblPlacar2";
             this.lblPlacar2.Size = new System.Drawing.Size(79, 73);
             this.lblPlacar2.TabIndex = 18;
+            this.lblPlacar2.Click += new System.EventHandler(this.lblPlacar2_Click);
             // 
             // btnSair
             // 
@@ -90,7 +92,7 @@
             // 
             this.lblJogador2.AutoSize = true;
             this.lblJogador2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJogador2.Location = new System.Drawing.Point(553, 17);
+            this.lblJogador2.Location = new System.Drawing.Point(550, 17);
             this.lblJogador2.Name = "lblJogador2";
             this.lblJogador2.Size = new System.Drawing.Size(80, 20);
             this.lblJogador2.TabIndex = 14;
@@ -121,7 +123,7 @@
             this.pcJogador2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcJogador2.Location = new System.Drawing.Point(492, 46);
             this.pcJogador2.Name = "pcJogador2";
-            this.pcJogador2.Size = new System.Drawing.Size(196, 212);
+            this.pcJogador2.Size = new System.Drawing.Size(220, 220);
             this.pcJogador2.TabIndex = 13;
             this.pcJogador2.TabStop = false;
             // 
@@ -130,7 +132,7 @@
             this.pcJogador1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pcJogador1.Location = new System.Drawing.Point(15, 48);
             this.pcJogador1.Name = "pcJogador1";
-            this.pcJogador1.Size = new System.Drawing.Size(196, 212);
+            this.pcJogador1.Size = new System.Drawing.Size(220, 220);
             this.pcJogador1.TabIndex = 10;
             this.pcJogador1.TabStop = false;
             // 
@@ -154,12 +156,24 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "Placar 2";
             // 
+            // btnVoltar
+            // 
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(677, 410);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(61, 28);
+            this.btnVoltar.TabIndex = 21;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
+            // 
             // frmJogodeDados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(761, 450);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblPlacar2);
@@ -195,5 +209,6 @@
         private System.Windows.Forms.PictureBox pcJogador1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

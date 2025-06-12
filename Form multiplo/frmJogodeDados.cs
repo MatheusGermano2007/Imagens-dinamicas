@@ -17,12 +17,13 @@ namespace Form_multiplo
         private int contVitoria1 = 0, contVitoria2 = 0;
         private string jogador1;
         private string jogador2;
-        public frmJogodeDados(string jogador1, string jogador2)
+
+        public frmJogodeDados(string jogador1, string jogador2, Form menuJogo)
         {
             InitializeComponent();
             this.jogador1 = jogador1;
             this.jogador2 = jogador2;
-            
+            this.Owner = menuJogo;
         }
 
         private void frmJogodeDados_Load(object sender, EventArgs e)
@@ -53,7 +54,18 @@ namespace Form_multiplo
             }
         }
 
-       
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            int pontosJog1 = contVitoria1;
+            int pontosJog2 = contVitoria2;
+            frmMenuJogo menuJogo = new frmMenuJogo();
+            menuJogo.AtualizarPlacar(pontosJog1, pontosJog2);
+        }
+
+        private void lblPlacar2_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void btnJogar_Click(object sender, EventArgs e)
         {
@@ -82,7 +94,7 @@ namespace Form_multiplo
         private int SorteioDado(PictureBox dado)
         {
             int valorDado = sorteio.Next(1, 7);
-            String arquivoDado = ".\\imagens\\dado" + valorDado.ToString() + ".jpg";
+            string arquivoDado = @".\Imagens\dado" + valorDado.ToString() + ".jpg";
             dado.Image = Image.FromFile(arquivoDado);
             return valorDado;
         }
